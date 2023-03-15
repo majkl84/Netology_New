@@ -32,17 +32,26 @@ class Student:
             else:
                 lecturer.grades[course] = [grade]
         else:
-            return 'Ошибка'
+            return "Ошибка"
     def __str__(self):
        print(
                 f"Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за домашние задания: {Student.average_student(self)}"
                 f"\nКурсы в процессе изучения: {','.join(self.courses_in_progress)}\nКурсы завершены: {','.join(self.finished_courses)}")
 
     def __lt__(self, other):
-        if self.average_student() >= other.average_student():
-            return f"{self.name} {self.surname} средняя оценка больше, равно {self.average_student()}"
-        else:
-            return f"{self.name} {self.surname} средняя оценка меньше, равно {self.average_student()}"
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average_student()).__lt__(other.average_student())
+    def __le__(self, other):
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average_student()).__le__(other.average_student())
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average_student()).__eq__(other.average_student())
+
+
 class Mentor:
     def __init__(self, name, surname):
         self.name = name
@@ -73,10 +82,19 @@ class Lecturer(Mentor):
             print("Нет курсов")
 
     def __lt__(self, other):
-        if self.average() >= other.average():
-            return f"{self.name} {self.surname} средняя оценка больше, равно {self.average()}"
-        else:
-            return f"{self.name} {self.surname} средняя оценка меньше, равно {self.average()}"
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average()).__lt__(other.average())
+
+    def __le__(self, other):
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average()).__le__(other.average())
+
+    def __eq__(self, other):
+        if not isinstance(other, self.__class__):
+            raise Exception('...')
+        return (self.average()).__eq__(other.average())
 
     def __str__(self):
         print(f"Имя: {self.name}\nФамилия: {self.surname}\nСредняя оценка за лекции: {Lecturer.average(self)}")
@@ -98,30 +116,15 @@ class Reviewer(Mentor):
         else:
             return 'Ошибка'
 
-def courses_average_students(student_list, course):
-    if not isinstance(student_list, Student):
+def courses_average(persons, course):
+    if not isinstance(persons, list):
         return "Нет студента"
     estimation = []
-    for student in student_list:
+    for student in persons:
         estimation.extend(student.grades.get(course, []))
     if not estimation:
         return "По такому курсу нет оценок"
     return round(sum(estimation) / len(estimation), 2)
-
-    # for student in student_list:
-    #     for k, v in student.grades.items():
-    #         if course == k:
-    #             sum_average = sum(v) / len(v)
-    #             print(f"Студент: {student.name} {student.surname}\nКурс: {k}\n"
-    #                   f"Cредняя оценка за домашние задания: {round(sum_average, 1)}\n")
-
-def courses_average_lecturer(lecturer_list, course):
-    for lecturer in lecturer_list:
-        for k, v in lecturer.grades.items():
-            if course == k:
-                sum_average = sum(v) / len(v)
-                print(f"Лектор: {lecturer.name} {lecturer.surname}\nКурс: {k}\n"
-                      f"Cредняя оценка за курс: {round(sum_average, 1)}\n")
 
 ruoy_student = Student('Ruoy', 'Eman', 'man')
 ivan_student = Student('Иван', 'Жаров', 'man')
@@ -166,10 +169,12 @@ print(ruoy_student.grades)
 print(Some_mentor.courses_attached)
 print(Dima_lecturer.grades)
 
+print(f"Cредняя оценка за домашние задания Студентов: {courses_average(Student.student_list, 'Python')}")
+print(f"Cредняя оценка Лекторов: {courses_average(Lecturer.lecturer_list, 'Python')}")
 
-print("")
-courses_average_students(Student.student_list, 'Python')
-# courses_average_lecturer(Lecturer.lecturer_list, 'Python')
-#
-# print(Dima_lecturer > Gena_lecturer)
-# print(ruoy_student < ivan_student)
+print(Dima_lecturer < Gena_lecturer)
+# print(Dima_lecturer <= Gena_lecturer)
+print(Dima_lecturer == Gena_lecturer)
+print(ruoy_student < Gena_lecturer)
+
+print(ruoy_student < ivan_student)
