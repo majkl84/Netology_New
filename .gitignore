@@ -150,3 +150,9 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+*.xml
+.idea/Netology_new.iml
+.idea/sonarlint/issuestore/d/d/dde6b47521f3425da847a474a23b67672b874557
+.idea/sonarlint/issuestore/index.pb
+.idea/sonarlint/securityhotspotstore/d/d/dde6b47521f3425da847a474a23b67672b874557
+.idea/sonarlint/securityhotspotstore/index.pb
