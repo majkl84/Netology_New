@@ -87,7 +87,7 @@ def create_shop_list():
     print_shop_list(shop_list)
 
 def get_cooking_book():
-    with open('cooking_book.txt', encoding="utf-8") as file_to_read:
+    with open('recipes.txt', encoding="utf-8") as file_to_read:
         while True:
             recipe_name = file_to_read.readline().strip()
             if recipe_name.strip() == '':
