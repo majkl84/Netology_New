@@ -22,3 +22,12 @@
 ### Вебинар №8
 * Открытие и чтение файла, запись в файл
 * Opening and reading a file, writing to a file
+### Вебинар №9
+* Работа с разными форматами данных
+* Working with different data formats
+* ### Вебинар №10
+* Работа с библиотекой requests, http-запросы
+* Working with the requests library, http requests
+* ### Вебинар №11
+* Работа с классами на примере API VK
+* Working with classes using the VK API example
