@@ -1,3 +1,6 @@
+### Вебинар №1
+* Python. Знакомство с консолью
+* Python. Getting to know the console
 ### Вебинар №2
 * Условные конструкции. Операции сравнения
 * Conditional constructions. Comparison operations
