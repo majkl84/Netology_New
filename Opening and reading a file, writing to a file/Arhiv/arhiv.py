@@ -1,6 +1,6 @@
 from pprint import pprint
 cook_book = {}
-with open("recipes.txt",encoding="utf-8") as file_with_food:
+with open("../recipes.txt", encoding="utf-8") as file_with_food:
     recipes_from_the_file = file_with_food.read()
     recipe_information = recipes_from_the_file.split("\n")
     print(recipe_information)
