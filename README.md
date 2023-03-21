@@ -26,7 +26,7 @@
 * [Работа с разными форматами данных](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20different%20data%20formats)
 * Working with different data formats
 * #### Вебинар №10
-* Работа с библиотекой requests, http-запросы
+* [Работа с библиотекой requests, http-запросы](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20the%20requests%20library)
 * Working with the requests library, http requests
 * #### Вебинар №11
 * Работа с классами на примере API VK
