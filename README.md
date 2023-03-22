@@ -32,5 +32,5 @@
 * [Работа с классами на примере API VK](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20classes%20using%20the%20VK%20API%20example)
 * Working with classes using the VK API example
 * #### Вебинар №12
-* [Разборный вебинар](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20classes%20using%20the%20VK%20API%20example)
+* [Разборный вебинар](https://github.com/majkl84/Netology_new/tree/main/Collapsible%20webinar)
 * Collapsible webinar
