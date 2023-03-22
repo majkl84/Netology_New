@@ -29,5 +29,8 @@
 * [Работа с библиотекой requests, http-запросы](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20the%20requests%20library)
 * Working with the requests library, http requests
 * #### Вебинар №11
-* Работа с классами на примере API VK
+* [Работа с классами на примере API VK](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20classes%20using%20the%20VK%20API%20example)
 * Working with classes using the VK API example
+* #### Вебинар №12
+* [Разборный вебинар](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20classes%20using%20the%20VK%20API%20example)
+* Collapsible webinar

@@ -1,0 +1,13 @@
+#### Стримы по ООП:
+* [Первая часть](https://www.youtube.com/watch?v=mZhhD1LuKTE)
+* [Вторая часть](https://www.youtube.com/watch?v=GX1BUYlwxxs)
+* [Третья часть](https://www.youtube.com/watch?v=5dUJNYtQB8E)
+* [статья на хабре про полиморфизм](https://habr.com/ru/post/552922/)
+* [методы сравнения](https://www.youtube.com/watch?v=bUK4ucGxcdE)
+* [сокровищница](https://github.com/luchanos/treasury)
+* [ссылка на сообщество](https://t.me/luchanos_live_chat)
+* [плейлист по пайчарму](https://www.youtube.com/watch?v=203sEmoSfpQ&list=PLlKID9PnOE5j8YGEmkOSZ_4n78LtP2-Mj)
+* [ролик по исключениям 1](https://www.youtube.com/watch?v=DWEo3SSgcJE)
+* [ролик по исключениям 2](https://www.youtube.com/watch?v=U4bpTLcM5kw)
+* [ролик по лямбдам ](https://www.youtube.com/watch?v=TjMoNjsddoc)
+* [плейлист по телеграм-боту](https://www.youtube.com/watch?v=nIWJqrspXRM&list=PLlKID9PnOE5i8kDKcC8pgaM07TTdRB6Au)
