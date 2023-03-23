@@ -25,12 +25,12 @@
 #### Вебинар №9
 * [Работа с разными форматами данных](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20different%20data%20formats)
 * Working with different data formats
-* #### Вебинар №10
+#### Вебинар №10
 * [Работа с библиотекой requests, http-запросы](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20the%20requests%20library)
 * Working with the requests library, http requests
-* #### Вебинар №11
+#### Вебинар №11
 * [Работа с классами на примере API VK](https://github.com/majkl84/Netology_new/tree/main/Working%20with%20classes%20using%20the%20VK%20API%20example)
 * Working with classes using the VK API example
-* #### Вебинар №12
+#### Вебинар №12
 * [Разборный вебинар](https://github.com/majkl84/Netology_new/tree/main/Collapsible%20webinar)
 * Collapsible webinar
