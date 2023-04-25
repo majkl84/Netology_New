@@ -3,7 +3,7 @@
 * Introduction to databases. Types of Databases.
 * [Дополнительные материалы к занятию «Введение в базы данных. Типы баз данных»](https://aws.amazon.com/ru/nosql/)
 #### Вебинар №2
-* [Работа с PostgreSQL. Создание БД.](https://github.com/majkl84/Netology_new/tree/main/SQL/Working%20with%20PostgreSQL%20from%20Python)
+* [Работа с PostgreSQL. Создание БД.](https://github.com/majkl84/Netology_new/tree/main/SQL/Working%20with%20PostgreSQL.%20Creating%20a%20database)
 * Working with PostgreSQL. Creating a database.
 #### Вебинар №3
 * [SELECT-запросы, выборки из одной таблицы](https://github.com/majkl84/Netology_new/tree/main/SQL/SELECT-queries%2C%20selections%20from%20the%20same%20table)
