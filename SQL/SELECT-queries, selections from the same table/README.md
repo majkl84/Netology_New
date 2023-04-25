@@ -1,0 +1,1 @@
+* [Загрузка БД dvdrental](https://github.com/netology-code/sqlpy-code/blob/main/03/dvdrental.md)
