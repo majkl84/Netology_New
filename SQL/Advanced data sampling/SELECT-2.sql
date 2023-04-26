@@ -17,9 +17,13 @@ GROUP BY albums.id, albums.title;
 --Все исполнители, которые не выпустили альбомы в 1990 году:
 SELECT artists.name
 FROM artists
-LEFT JOIN album_artist ON artists.id = album_artist.artist_id
-LEFT JOIN albums ON album_artist.album_id = albums.id
-WHERE albums.release_date NOT BETWEEN '1990-01-01' AND '1990-12-31' OR albums.release_date IS NULL;
+WHERE artists.name NOT IN (
+SELECT artists.name
+FROM artists
+JOIN album_artist ON artists.id = album_artist.artist_id
+JOIN albums ON album_artist.album_id = albums.id
+WHERE extract(year from albums.release_date) = 1990
+);
 --Названия сборников, в которых присутствует конкретный исполнитель:
 SELECT compilations.title
 FROM compilations
@@ -53,9 +57,9 @@ SELECT albums.title
 FROM albums
 JOIN tracks ON albums.id = tracks.album_id
 GROUP BY albums.id
-HAVING COUNT() = (
+HAVING COUNT(*) = (
 SELECT MIN(track_count)
-FROM (SELECT album_id, COUNT() AS track_count
+FROM (SELECT album_id, COUNT(*) AS track_count
 FROM tracks
 GROUP BY album_id) AS track_counts
 );
