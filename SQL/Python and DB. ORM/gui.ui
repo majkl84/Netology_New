@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>271</width>
-    <height>172</height>
+    <width>384</width>
+    <height>213</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,30 +25,68 @@
 	padding: 0;
 	margin: 0;
 	color: #fff;
+	
 }
 #centralwidget{
 	background-color: #16191d;
 }
 #widget_2 QPushButton{
+	background-color: #1f232a;
 	text-align: left;
 	padding: 5px 10px;
 	border-radius: 5px;	
-	
+	border: 1px solid #ed685f;
 }
 #widget QLabel{
+	background-color: #1f232a;
 	text-align: left;
 	padding: 5px 10px;
 	border-radius: 5px;
-	border: 1px solid #ed685f;
-	
+	border: 1px solid #ed685f;	
 }
+#widget_2 QPlainTextEdit{
+	color: rgb(0, 0, 0);
+	border-radius: 5px;
+	border: 1px solid #ed685f;
+}
+
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
     <item>
      <widget class="QWidget" name="widget" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
        <item>
         <widget class="QFrame" name="frame">
          <property name="frameShape">
@@ -58,6 +96,21 @@
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
            <widget class="QLabel" name="label">
             <property name="font">
@@ -66,7 +119,7 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #16191d;</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string/>
@@ -108,7 +161,7 @@
         <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>0</number>
+        <number>10</number>
        </property>
        <item>
         <widget class="QFrame" name="frame_2">
@@ -138,7 +191,7 @@
            <widget class="QPlainTextEdit" name="search">
             <property name="maximumSize">
              <size>
-              <width>250</width>
+              <width>16777215</width>
               <height>30</height>
              </size>
             </property>
@@ -148,7 +201,7 @@
              </font>
             </property>
             <property name="styleSheet">
-             <string notr="true">color: rgb(0, 0, 0);</string>
+             <string notr="true"/>
             </property>
             <property name="placeholderText">
              <string>Поиск....</string>
@@ -159,12 +212,12 @@
            <widget class="QPushButton" name="btnsearch">
             <property name="maximumSize">
              <size>
-              <width>250</width>
+              <width>16777215</width>
               <height>30</height>
              </size>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: #1f232a;</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>Поиск</string>
