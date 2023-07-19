@@ -1,3 +1,5 @@
+[Ссылка на код к занятию](https://github.com/netology-code/DJ_code/tree/master/crud)
+
 **CRUD**
 
 **CRUD** — это аббревиатура для Create-Read-Update-Delete. Ей обозначают логику для операций создания, чтения, обновления и удаления сущностей
