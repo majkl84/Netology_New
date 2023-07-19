@@ -10,23 +10,32 @@
 Физическое устройство, на котором запущена программа-сервер.
 
 Обычно эти программы расположены на разных вычислительных машинах и взаимодействуют между собой по различным **протоколам**, но они могут располагаться и на одной машине.
-![Методы!](https://github.com/majkl84/Netology_new/blob/main/Django%20Creating%20functional%20web%20applications/6_CRUD%20в%20DRF/scrin-6.png)
+
+![Скрин 1!](https://github.com/majkl84/Netology_new/blob/main/Django%20Creating%20functional%20web%20applications/1_Introduction%20to%20Django%20Project%20preparation%20and%20launch/1.1.3_1.png)
+
 Веб-приложение реализует клиент-серверное взаимодействие. Пользователи шлют запросы к серверу, он выдаёт им результат в специальном виде html- или JSON-данных.
-![Методы!](https://github.com/majkl84/Netology_new/blob/main/Django%20Creating%20functional%20web%20applications/6_CRUD%20в%20DRF/scrin-6.png)
-Django-проект выступает в роли сервера. Чтобы запустить проект, выполните команды:
 
-$ ./manage.py runserver # запускает проект<br>
-Классическим клиентом для веб-сервера является браузер, например Google Chrome, в нем можно указать адрес и порт сервера (по умолчанию для Django - http://127.0.0.1:8000), тогда браузер (клиент) начнет взаимодействие с Django (сервером).<br>
+![Скри 2!](https://github.com/majkl84/Netology_new/blob/main/Django%20Creating%20functional%20web%20applications/1_Introduction%20to%20Django%20Project%20preparation%20and%20launch/1.1.3_1_n.png)
 
-* MVC и Django<br>
-<b>Django</b> генерирует структуру проекта самостоятельно. Благодаря этому даже новые разработчики знают, где и что можно искать.<br>
-При разработке Django-приложений очень важно придерживаться соглашений.
+Django-проект выступает в роли **сервера.** Чтобы запустить проект, выполните команды:
+
+1. $ ./manage.py runserver # запускает проект<br>
+
+Классическим клиентом для веб-сервера является браузер, например Google Chrome, в нем можно указать адрес и порт сервера (по умолчанию для Django - http://127.0.0.1:8000), тогда браузер (клиент) начнет взаимодействие с Django (сервером).
+
+**MVC и Django**
+
+**Django** генерирует структуру проекта **самостоятельно**. Благодаря этому даже новые разработчики знают, где и что можно искать.
+
+При разработке Django-приложений очень важно придерживаться **соглашений.**
+
 Проекты на Django должны придерживаться паттерна MVC: model-view-controller
-— модель-представление-контроллёр.<br>
+— модель-представление-контроллёр.
 
-Управление логикой при ответе -> view;<br>
-Как будет выглядеть страница -> template;<br>
-Состояние приложения -> model.<br>
+Управление логикой при ответе -> **view**;<br>
+Как будет выглядеть страница -> **template**;<br>
+Состояние приложения -> **model**.
 
-* [Дополнительный материал](https://docs.djangoproject.com/en/3.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
+[Дополнительный материал](https://docs.djangoproject.com/en/3.2/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names)
+
 Правило: не мешать всё в одну кучу.
